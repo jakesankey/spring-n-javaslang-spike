@@ -1,0 +1,13 @@
+version: "2"
+services:
+  spring_boot:
+    image: maven
+    volumes:
+      - "$PWD:/app"
+      - "$HOME/.m2:/root/.m2"
+    working_dir: "/app"
+    command: "mvn spring-boot:run"
+    ports: 
+      - "8080:8080"
+    environment:
+      MAVEN_OPTS: "-Xms512m -Xmx1024m -Xss10m"
