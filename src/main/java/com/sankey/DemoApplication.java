@@ -32,10 +32,10 @@ public class DemoApplication {
 
 	private List<String> peopleUnderAge(Integer minAge) {
 		List<Person> persons = List.of(
-			new Person("Jake", "Sankey", 30), 
-			new Person("Renee", "Sankey", 30), 
-			new Person("Jakey", "Sankey", 1), 
-			new Person("Ali", "Sankey", 3)
+			new Person("John", "Doe", 40), 
+			new Person("Jane", "Doe", 30), 
+			new Person("Jill", "Doe", 5), 
+			new Person("Joe", "Doe", 12)
 		);
 		return persons.filter(p -> p.getAge() >= minAge).map(Person::getName);
 	}
