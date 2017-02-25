@@ -1,4 +1,4 @@
-package com.deere;
+package com.sankey;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

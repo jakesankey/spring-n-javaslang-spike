@@ -1,4 +1,4 @@
-package com.deere;
+package com.sankey;
 
 class Person {
     private String first;
